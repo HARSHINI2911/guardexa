@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API = "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 const EXAMPLES = [
   { label: "Normal payment", task: "Pay vendor 2000", tool: "send_money", amount: 2000, count: 10, body: "", source: "user" },

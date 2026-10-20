@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 
-const API = "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 const SCENARIOS = [
   { key: "normal_payment", label: "Normal payment", emoji: "✅", color: "#10B981", desc: "Pay vendor ₹5,000" },
